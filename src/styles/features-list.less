@@ -1,0 +1,64 @@
+/*who we are*/
+.features {
+    width: 790px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 115px;
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: 0.010em;
+    font-weight: 500;
+      h1 {
+        font-size: 44px;
+        line-height: 54px;
+        letter-spacing: 0.001;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+}
+.features-list {
+  width: 1170px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  margin-left: 60px;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.001em;
+  font-weight: 500;
+  margin-bottom: 126px;
+  margin-top: 70px;
+
+  .features-item {
+    width: 270px;
+    position: relative;
+    h1 {
+        font-size: 26px;
+        line-height: 34px;
+        letter-spacing: 0.002em;
+        margin-bottom: 20px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -90px;
+      width: 60px;
+      height: 53px;
+      background-repeat: no-repeat;
+      background-position: right top;
+    } 
+    &.features-item-1::before {
+      background-image: url("../img/icon-heart.svg");
+    }
+    &.features-item-2::before {
+      background-image: url("../img/icon-lamp.svg");
+    } 
+    &.features-item-3::before {
+      background-image: url("../img/icon-star.svg");
+    }
+  }
+}
