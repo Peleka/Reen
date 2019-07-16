@@ -1,63 +1,51 @@
 /*figure*/
 .portfolio {
-    padding-top: 105px;
-    text-align: center;
-    background-color: #f2f5f7;
-    position: relative;    
-    h1 {
-        font-size: 44px;
-        line-height: 54px;
-    }   
-    p {
-      font-size: 22px;
-      line-height: 34px;
-      margin-top: 20px;
-      font-weight: normal;
-      margin-bottom: 75px;
+	position: relative; 
+  padding-top: 105px;
+  text-align: center;
+  background-color: #f2f5f7;
+  h1 {
+    font-size: 44px;
+    line-height: 54px;
+  }   
+  p {
+		margin: 20px 0 75px;
+		font-size: 22px;
+    line-height: 34px;
+    font-weight: normal;
+  }
+  figure {
+		margin: 0;
+		margin-bottom: 80px;
+    padding: 0;
+    background-color: #fff;
+    figcaption {
+			h1 {
+				padding-top: 25px;
+        font-size: 20px;
+        line-height: 26px;
+      }
+      p {
+				margin: 7px 0 28px;
+				font-size: 14px;
+        line-height: 20px;
+      }
     }
-    figure {
-        margin: 0;
-        padding: 0;
-        background-color: #fff;
-        margin-bottom: 80px;
-        figcaption {
-            h1 {
-               padding-top: 25px;
-               font-size: 20px;
-               line-height: 26px;
-            }
-            p {
-              font-size: 14px;
-              line-height: 20px;
-              margin-bottom: 28px;
-              margin-top: 7px;
-            }
-        }
+  }
+  .portfolio-pagination {
+		position: absolute;
+		right: 50%;
+		transform: translateX(50%);
+    bottom: 150px;
+    width: 65px;
+    li {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #506a85;
+      &.active {
+        background-color: #00bc9c;
+      }
     }
-    .wrapper-flex-portfolio-small {
-        padding-bottom: 200px;
-    }
-    .portfolio-pagination {
-        width: 100%;
-        position: absolute;
-        bottom: 150px;
-        right: 0;
-        ul {
-            margin-left: auto;
-            margin-right: auto;
-            width: 65px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;  
-            li {
-                width: 15px;
-                height: 15px;
-                border-radius: 50%;
-                background: #506a85;
-                &:nth-child(2) {
-                    background-color: #00bc9c;
-                }
-            }
-        }
-    }
+  }
 }
