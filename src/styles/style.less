@@ -35,9 +35,11 @@ h1 {
 }
 .wrapper-flex {
   display: flex;
+  justify-content: space-between;
+}
+.wrapper-flex-header {
   padding-bottom: 10px;
   padding-top: 10px;
-  justify-content: space-between;
 }
 .contact-info li {
   display: inline-block;
@@ -81,48 +83,7 @@ h1 {
 }
 
 
-/*figure*/
-.portfolio {
-  padding-top: 126px;
-  text-align: center;
-  background-color: #f2f5f7;
-}
-.portfolio-item h1 {
-  font-size: 44px;
-  line-height: 54px;
-}
-.portfolio-item p {
-  font-size: 22px;
-  line-height: 34px;
-  margin-top: 25px;
-  font-weight: normal;
-  margin-bottom: 75px;
-}
-.portfolio-item-big {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 80px;
-}
-figure {
-  margin: 0;
-  background-color: #fff;
-}
-figcaption h1 {
-  padding-top: 33px;
-  font-size: 20px;
-  line-height: 26px;
-  margin-bottom: 12px;
-}
-figcaption p {
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 30px;
-}
-.porfolio-item-small {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 200px;
-}
+
 /*сотрудничество*/
 .cooperation {
   background-color:#fff; 
@@ -284,6 +245,7 @@ a.button-link {
 }
 @import "slider.less";
 @import "features-list.less";
+@import "portfolio.less";
 
 
 
