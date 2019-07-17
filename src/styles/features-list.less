@@ -8,13 +8,15 @@
   line-height: 34px;
   letter-spacing: .010em;
   font-weight: 500;
+
   h1 {
+    margin-bottom: 20px;
     font-size: 44px;
     line-height: 54px;
-    margin-bottom: 20px;
     font-weight: bold;
   }
 }
+
 .features-list {
   display: flex;
   justify-content: space-around;
@@ -24,14 +26,17 @@
   font-size: 16px;
   line-height: 25px;
   font-weight: 500;  
+
   .features-item {
     position: relative;
     width: 270px;    
+
     h1 {
       margin-bottom: 20px;
       font-size: 26px;
       line-height: 34px;
     }
+
     &::before {
       content: "";
       position: absolute;
@@ -42,12 +47,15 @@
       background-repeat: no-repeat;
       background-position: right top;
     } 
+
     &.features-item-1::before {
       background-image: url("../img/icon-heart.svg");
     }
+
     &.features-item-2::before {
       background-image: url("../img/icon-lamp.svg");
     } 
+
     &.features-item-3::before {
       background-image: url("../img/icon-star.svg");
     }

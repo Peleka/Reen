@@ -2,11 +2,13 @@
 .slider {
   position: relative;
   width: 100%;
+
   img {
     width: 100%;
     min-height: 886px;   
     background-color: #a3b1bf; 
   }
+
   .slider-content { 
     position: absolute; 
     top: 50%;
@@ -14,6 +16,7 @@
     transform: translateY(-50%);
     width: 100%;
     text-align: center;
+
     h1 {
       padding-bottom: 10px;
       font-size: 78px;
@@ -22,6 +25,7 @@
       text-transform: uppercase;
       color: #fff;      
     }
+
     p {
       padding-bottom: 60px;
       font-size: 24px;
@@ -30,6 +34,7 @@
       font-weight: normal;
       color: #a3b1bf;      
     }
+    
     a {
       padding: 23px 70px;
       font-size: 18px;
@@ -44,10 +49,12 @@
       box-shadow: 0 -2px rgba(0,0,0,.15) inset;      
     }
   }
+
   .pagination {
     position: absolute;
     bottom: -18px;
     width: 100%;
+
     ul {
       display: flex;
       align-items: center;
@@ -58,17 +65,20 @@
       padding: 0 5px;
       border-radius: 3px;
       background-color: #fff; 
+
       li {
         width: 15px;
         height: 15px;
         border-radius: 50%;
         background: #506a85;
+
         &.active {
           background-color: #00bc9c;
         }
       }
     }
   }
+
   .icon-next {
     position: absolute;
     top: 50%;
@@ -76,15 +86,18 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+
     .arrow {
       width: 60px;
       height: 60px;
       background: rgba(80, 106, 133,.75) no-repeat 20px 15px;
       opacity: .5;
     }
+
     .icon-left {
       background-image: url("../img/icon-left-open-mini.png");
     }
+    
     .icon-right {
       background-image: url("../img/icon-right-open-mini.png");
     }
