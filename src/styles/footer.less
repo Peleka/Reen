@@ -1,6 +1,7 @@
 /*footer*/
 .footer {
 		background-color: #2f4052;
+    font-weight: 500;
 
 		h1 {
 			margin-bottom: 22px;
@@ -17,17 +18,15 @@
 			font-size: 14px;
 			line-height: 22px;
 			letter-spacing: .02em;
-			color: #a3b1bf;
-			font-weight: 500;
+      font-weight: 500;
+      color: #a3b1bf;
 		}
 		a {
-			color: #a3b1bf;
 			font-size: 15px;
 			line-height: 22px;
-			letter-spacing: .02em;
-		}
-  
-  
+      letter-spacing: .02em;
+      color: #a3b1bf;
+		}  
   
   .footer-item {
     color: #fff;
@@ -38,34 +37,42 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    li {
+      margin: 0;
+      margin-right: 5px;
+    }
   }
-  .footer-img li {
-    margin: 0;
-    margin-right: 5px;
+  
+  .footer-item-1 {
+
+    p {
+      margin-top: 13px;
+    }
+    
+    span {
+      position: relative;
+      font-weight: 700;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 6px;
+        right: -15px;
+        width: 10px;
+        height: 9px;
+        background: url(../img/icon-right.png) no-repeat center;
+      }
+    }
   }
-  .footer-item p:nth-of-type(1) {
-    margin-top: 13px;
+  
+  .footer-item-3 {  
+
+    img {
+      margin-right: 5px;
+    }
   }
-  .footer-item a:nth-of-type(2) {
-    position: relative;
-  }
-  .footer-item a:nth-of-type(2)::after {
-    content: "";
-    position: absolute;
-    top: 7px;
-    right: -15px;
-    width: 10px;
-    height: 9px;
-    background-image: url("../img/icon-right.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-  .icon img {
-    margin-right: 5px;
-  }
-  .icon span {
-    font-weight: 500;
-  }
+
   .subscribe {
     width: 270px; 
     min-height: 40px;
@@ -74,16 +81,16 @@
    }
    input[type="email"] {
     min-width: 150px;
+    height: 45px;
+    margin-left: 15px;
     border: none; 
     outline: none;
     background-color: #4e5c6c;
-    height: 45px;
     color: #a3b1bf;
     font-family: 'Source Sans Pro', Arial, sans-serif;
     font-size: 14px;
     line-height: 22px;
     font-weight: 600;
-    margin-left: 15px;
     letter-spacing: .02em;
     vertical-align: middle;  
   }
@@ -91,6 +98,8 @@
     width: 88px; 
     height: 30px; 
     margin-left: 0;
+    border: none;
+    border-radius: 3px;
     text-transform: uppercase;
     text-decoration: none;
     font-family: 'Source Sans Pro', Arial, sans-serif;
@@ -98,17 +107,14 @@
     font-weight: 600;
     letter-spacing: .03em;
     color: #fff;
-    border: none;
     background-color: #00bc9c;
-    border-radius: 3px;
-    box-shadow: 0 -2px rgba(0,0,0,0.15) inset;
+    box-shadow: 0 -2px rgba(0,0,0,.15) inset;
    }
   
   .footer-ending {
 		background-color: #283645; 
 
-		p, 
-	  a {
+		p, a {
 			margin: 0;
 		  color: #707e8c;  
     }
