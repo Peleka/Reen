@@ -2,7 +2,7 @@
 .features {
   width: 100%;
   max-width: 790px;
-  margin: 115px auto 0;
+  margin: 115px auto 130px;
   text-align: center;
   font-size: 22px;
   line-height: 34px;
@@ -19,17 +19,18 @@
 
 .features-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  margin: 70px 0 126px 60px;
+  margin-bottom: 80px;
   font-size: 16px;
   line-height: 25px;
   font-weight: 500;  
 
   .features-item {
     position: relative;
-    width: 270px;    
+    width: 270px; 
+    margin-left: 90px;   
 
     h1 {
       margin-bottom: 20px;
@@ -41,7 +42,7 @@
       content: "";
       position: absolute;
       top: 0;
-      left: -90px;
+      left: -80px;
       width: 60px;
       height: 53px;
       background-repeat: no-repeat;
@@ -49,15 +50,15 @@
     } 
 
     &.features-item-1::before {
-      background-image: url("../img/icon-heart.svg");
+      background-image: url(../img/icon-heart.svg);
     }
 
     &.features-item-2::before {
-      background-image: url("../img/icon-lamp.svg");
+      background-image: url(../img/icon-lamp.svg);
     } 
 
     &.features-item-3::before {
-      background-image: url("../img/icon-star.svg");
+      background-image: url(../img/icon-star.svg);
     }
   }
 }
