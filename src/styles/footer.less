@@ -76,7 +76,9 @@
   }
 
   .subscribe {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     min-width: 270px; 
     min-height: 40px;
     background-color: #4e5c6c;
@@ -99,10 +101,9 @@
     }
 
     input[type="submit"] {
-      position: absolute;
-      top: 7px;
-      right: 5px;
       width: 88px; 
+      min-height: 30px;
+      margin-right: 5px;
       border: none;
       border-radius: 3px;
       text-transform: uppercase;
