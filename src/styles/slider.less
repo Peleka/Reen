@@ -12,10 +12,17 @@
   &__content { 
     position: absolute; 
     top: 50%;
-    left: 0;
     transform: translateY(-50%);
     width: 100%;
     text-align: center;
+    
+    &--left {
+      text-align: start;
+    }
+
+    &--right {
+      text-align: end;
+    }
   }
 
   &__title {
@@ -24,7 +31,11 @@
     line-height: 88px;
     letter-spacing: .06em;
     text-transform: uppercase;
-    color: #fff;      
+    color: #fff; 
+    
+    &--grey {
+      background-color: #c3f143;
+    }
   }
 
   &__text {
@@ -50,8 +61,6 @@
     box-shadow: 0 -2px rgba(0,0,0,.15) inset;      
   }
 }
-
-/*pagination*/
 
 .pagination {
   position: absolute;

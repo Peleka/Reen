@@ -1,5 +1,5 @@
 /*who we are*/
-.features {
+.common-features {
   width: 100%;
   max-width: 790px;
   margin: 115px auto 130px;
@@ -9,7 +9,7 @@
   letter-spacing: .01em;
   font-weight: 500;
 
-  h1 {
+  &__title {
     margin-bottom: 20px;
     font-size: 44px;
     line-height: 54px;
@@ -17,7 +17,7 @@
   }
 }
 
-.features-list {
+.features {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -26,18 +26,19 @@
   font-size: 16px;
   line-height: 25px;
   font-weight: 500;  
+  color: #73879c;
 
-  .features-item {
+  &__title {
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  &__item {
     position: relative;
     width: 270px; 
-    margin-left: 90px;   
-
-    h1 {
-      margin-bottom: 20px;
-      font-size: 26px;
-      line-height: 34px;
-    }
-
+    margin-left: 90px; 
+      
     &::before {
       content: "";
       position: absolute;
@@ -49,15 +50,15 @@
       background-position: right top;
     } 
 
-    &.features-item-1::before {
+    &--heart::before {
       background-image: url(../img/icon-heart.svg);
     }
 
-    &.features-item-2::before {
+    &--lamp::before {
       background-image: url(../img/icon-lamp.svg);
     } 
 
-    &.features-item-3::before {
+    &--star::before {
       background-image: url(../img/icon-star.svg);
     }
   }
