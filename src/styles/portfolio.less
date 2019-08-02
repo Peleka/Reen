@@ -39,22 +39,52 @@
     }
   }
 
-  .portfolio-pagination {
-		position: absolute;
-		right: 50%;
-		transform: translateX(50%);
-    bottom: 150px;
-    width: 65px;
-
-    li {
+  .pagination {
+    position: absolute;
+       
+    &--portfolio-small {
+      right: 50%;
+      transform: translateX(50%);
+      bottom: 150px;
+      width: 65px;
+    }
+    
+    &__item {
       width: 15px;
       height: 15px;
       border-radius: 50%;
       background: #506a85;
-      
-      &.active {
+  
+      &--active {
         background-color: #00bc9c;
       }
     }
   }
+
+  .portfolio-arrows {
+    position: absolute;
+    transform: scale(.5);
+    bottom: 127px;
+    right: 50%;
+    transform: translateX(50%);
+    display: flex;
+    justify-content: space-around;
+
+    .arrow-portfolio {
+      width: 60px;
+      height: 60px;
+      background: rgba(80, 106, 133,.75) no-repeat 20px 15px;
+      opacity: .5;
+    }
+
+    .icon-left {
+      background-image: url(../img/icon-left-open-mini.png);
+    }
+    
+    .icon-right {
+      background-image: url(../img/icon-right-open-mini.png);
+    }
+  }
+   
 }
+
