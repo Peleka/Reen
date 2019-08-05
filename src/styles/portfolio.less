@@ -24,6 +24,11 @@
   padding: 0;
   background-color: #fff;
 
+  &__img {
+    width: 570px;
+    height: 390px;
+  }
+
   &__name {
     padding-top: 25px;
     font-size: 20px;
@@ -56,27 +61,23 @@
     &--active {
       background-color: #00bc9c;
     }
+  }
 
-    &--arrow-left {
-      width: 30px;
-      height: 30px;
-      margin-right: 5px;
-      background: rgba(80, 106, 133,.65) no-repeat center;
-      opacity: .5;
-      border-radius: 3px;
+  &__arrow {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    background: rgba(80, 106, 133,.65) no-repeat center;
+    opacity: .5;
+    border-radius: 3px;
+    background-size: 8px;
+
+    &--left {
       background-image: url(../img/icon-left-open-mini.png);
-      background-size: 8px;
     }
 
-    &--arrow-right {
-      width: 30px;
-      height: 30px;
-      margin-left: 5px;
-      background: rgba(80, 106, 133,.65) no-repeat center;
-      opacity: .5;
-      border-radius: 3px;
+    &--right {
       background-image: url(../img/icon-right-open-mini.png);
-      background-size: 8px;
     }
   }
 }
