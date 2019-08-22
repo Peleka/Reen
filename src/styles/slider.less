@@ -66,13 +66,22 @@
   background-color: #fff; 
   
   &__item {
+    cursor: pointer;
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background: #506a85;
+    
+    &:hover {
+      background-color: #acb7c2;
+    }
   
     &--active {
       background-color: #00bc9c;
+
+      &:hover {
+        background-color: #00bc9c;
+      }
     }
   }
 }
@@ -86,10 +95,15 @@
   width: 100%;
 
   &__icon {
+    cursor: pointer;
     width: 60px;
     height: 60px;
     background: rgba(80, 106, 133, .75) no-repeat 20px 15px;
     opacity: .5;
+
+    &:hover {
+      opacity: .8;
+    }    
   
     &--left {
       background-image: url(../img/icon-left-open-mini.png);
