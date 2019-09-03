@@ -23,8 +23,16 @@
   margin: 0;
   padding: 0;
   background-color: #fff;
+
+  &:hover .picture__link {
+    display: flex;
+  }
+
+  &__wrap {
+    position: relative;
+  }
   
-  &__wrapper {
+  &__link {
     position: absolute;
     top: 0;
     left: 0;
@@ -32,12 +40,17 @@
     bottom: 0;
     display: none;
     color: #fff;
+    align-items: center;
+    justify-content: center;
+    background-image: none;
+    background-color: rgba( 0, 188, 156, .7);
   }
 
   &__img {    
+    display: block;
     width: 100%;
     height: 100%;
-  }
+    }
   
   &__caption {
     cursor: pointer;
@@ -61,25 +74,17 @@
     line-height: 20px;
   }
    
-  &__wrapper-plus {
+  &__link-text {
     font-size: 30px;
     font-weight: 500;
     color: #fff;
 
-    &--text {
+    &--small {
       font-size: 18px;
       color: #fff;
     }
   }  
   
-  &:hover .picture__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: none;
-    background-color: rgba( 0, 188, 156, .7);
-  }
-
   &--footer {
     margin: 0;
     margin-right: 5px;
