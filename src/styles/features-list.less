@@ -28,6 +28,10 @@
   font-weight: 500;  
   color: #73879c;
 
+  @media (max-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+
   &__title {
     margin-bottom: 20px;
     font-size: 26px;
@@ -36,9 +40,9 @@
 
   &__item {
     position: relative;
-    width: 270px; 
-    margin-left: 90px; 
-      
+    width: 270px;
+    margin-left: 90px;
+    
     &::before {
       content: "";
       position: absolute;
@@ -48,7 +52,7 @@
       height: 53px;
       background-repeat: no-repeat;
       background-position: right top;
-    } 
+    }
 
     &--heart::before {
       background-image: url(../img/icon-heart.svg);
@@ -56,7 +60,7 @@
 
     &--lamp::before {
       background-image: url(../img/icon-lamp.svg);
-    } 
+    }
 
     &--star::before {
       background-image: url(../img/icon-star.svg);

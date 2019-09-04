@@ -2,13 +2,22 @@
   display: flex;
   justify-content: space-between;
 
+  @media (max-width: 992px) {
+    padding: 0 10px;
+  }
+
+  &--mobile {
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }    
+  }
+
   &--wrap {
     flex-wrap: wrap;
   }
 
   &--header {
     align-items: center;
-    min-height: 112px;
   }
  
   &--portfolio-small {

@@ -9,11 +9,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &--social {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
   }
 
   &__logo {
     width: 161px;
     height: 40px;
+
+    @media (max-width: 768px) {
+      order: 1;
+    }
   }
 
   &__icon {
@@ -22,7 +32,7 @@
 
     &--first {
       width: 6px;
-    }    
+    }
   }
 
   &__item {
@@ -66,20 +76,43 @@
 }
 
 .main-menu {
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
 
   &__link {
     display: block;
     padding: 48px 22px;
-    text-transform: uppercase;   
+    text-transform: uppercase;
+
+    @media (max-width: 992px) {
+      padding: 35px 10px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hamburger {
+  display: none;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+
+  @media (max-width: 767px) {
+    display: block;
   }
 }
 
 .search {
   display: flex;
   padding: 10px;
-  margin: 0 20px 0 120px;
+  margin: 0;
+
+  @media (max-width: 767px) {
+    order: 2;
+  }
 
   &__img {
     width: 12px;
