@@ -27,6 +27,13 @@
   &:hover .picture__link {
     display: flex;
   }
+
+  &--small {   /*тут у меня сомнения*/
+    @media (max-width: 320px) {
+    width: 270px;
+    height: 100px;
+    }
+  }
   
   &--footer {
     width: 125px;
@@ -108,17 +115,28 @@
   right: 50%;
   transform: translateX(50%);
   bottom: 130px;
-  width: 160px;
+  width: 100%;
+  max-width: 160px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: 320px) {
+    max-width: 100px;
+    bottom: 170px;
+  }
+
   &__item {
     cursor: pointer;
-    width: 15px;
-    height: 15px;
+    min-width: 15px;
+    min-height: 15px;
     border-radius: 50%;
     background: #506a85;
+
+    @media (max-width: 320px) {
+      min-width: 10px;
+      min-height: 10px;
+    }
     
     &:hover {
       background-color: #acb7c2;
@@ -135,13 +153,18 @@
 
   &__arrow {
     cursor: pointer;
-    width: 30px;
-    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
     margin-right: 5px;
     background: rgba(80, 106, 133,.65) no-repeat center;
     opacity: .5;
     border-radius: 3px;
     background-size: 8px;
+
+    @media (max-width: 320px) {
+      min-width: 15px;
+      min-height: 15px;
+    }
 
     &:hover {
       opacity: .8;

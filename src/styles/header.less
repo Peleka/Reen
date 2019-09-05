@@ -20,6 +20,10 @@
   &__logo {
     width: 161px;
     height: 40px;
+
+    @media (max-width: 320px) {
+      order: 1;
+    }
   }
 
   &__icon {
@@ -86,25 +90,32 @@
 
     @media (max-width: 992px) {
       padding: 35px 10px;
-    }    
+    }
+
+    @media (max-width: 320px) {
+      display: none;
+    }
   }
 }
-/*
+
 .hamburger {
   display: none;
   width: 50px;
   height: 50px;
-  border: 1px solid #000;
-
+  
   @media (max-width: 767px) {
     display: block;
   }
-}*/
+}
 
 .search {
   display: flex;
   padding: 10px;
   margin: 0;
+
+  @media (max-width: 320px) {
+    order: 2;
+  }
 
   &__img {
     width: 12px;
