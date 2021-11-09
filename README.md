@@ -1,5 +1,5 @@
 ## Installation
 
 ```sh
-project
+https://peleka.github.io/Reen/
 ```
